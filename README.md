@@ -1,4 +1,4 @@
-# Nome do Jogo
+# Flapy
 
 Projeto final da disciplina de Introdução a Algoritmos/Programação, desenvolvido com Python e Pygame.
 
@@ -6,10 +6,10 @@ Este repositório é um template para os grupos da disciplina. A proposta é com
 
 ## Integrantes do grupo
 
-- Nome do integrante 1
-- Nome do integrante 2
-- Nome do integrante 3
-- Nome do integrante 4
+- Gustavo Albuquerque
+- Henrique de Freitas
+- Juan Pedro
+- Leonardo Gonzaga
 
 ## Estrutura do projeto
 
@@ -24,17 +24,15 @@ Este repositório é um template para os grupos da disciplina. A proposta é com
 
 Descreva brevemente a ideia principal do jogo.
 
-Exemplo:
+Flapy é um jogo de habilidade em que o jogador controla um pássaro que deve atravessar espaços entre obstáculos sem colidir com eles. A cada obstáculo ultrapassado, o jogador ganha pontos.
 
-> O jogo consiste em controlar um personagem que deve coletar moedas e evitar obstáculos. O jogador ganha pontos ao coletar itens e perde vidas ao colidir com obstáculos. A partida termina quando o tempo acaba ou quando o jogador perde todas as vidas.
+O objetivo é sobreviver o máximo possível e alcançar a maior pontuação antes de colidir com um obstáculo ou com o chão.
 
 ## Objetivo do jogador
 
 Explique o que o jogador precisa fazer para vencer ou avançar no jogo.
 
-Exemplo:
-
-> O objetivo é coletar a maior quantidade possível de itens antes que o tempo acabe, evitando colisões com os obstáculos.
+Controlar o pássaro para atravessar o maior número possível de obstáculos, acumulando pontos e tentando superar o recorde armazenado pelo jogo.
 
 ## Regras do jogo
 
@@ -42,23 +40,21 @@ Liste as principais regras do jogo.
 
 Exemplo:
 
-- O jogador se movimenta usando as setas do teclado.
-- Cada item coletado aumenta a pontuação.
-- Colidir com um obstáculo reduz a quantidade de vidas.
-- A partida termina quando o jogador perde todas as vidas ou quando o tempo acaba.
+- O pássaro se movimenta continuamente para frente.
+- A gravidade faz o pássaro cair constantemente.
+- Ao pressionar a tecla de ação, o pássaro realiza um salto.
+- Cada obstáculo ultrapassado aumenta a pontuação do jogador.
+- Colidir com um obstáculo encerra a partida.
+- Colidir com o chão encerra a partida.
+- O jogo registra o maior recorde obtido.
 
 ## Controles
 
 Informe as teclas ou comandos utilizados no jogo.
 
-Exemplo:
-
-- Seta para cima: mover para cima
-- Seta para baixo: mover para baixo
-- Seta para esquerda: mover para esquerda
-- Seta para direita: mover para direita
-- Espaço: realizar ação
-- ESC: sair do jogo
+Espaço: fazer o pássaro subir.
+ENTER: iniciar ou reiniciar a partida.
+ESC: sair do jogo.
 
 ## Como executar o projeto
 
