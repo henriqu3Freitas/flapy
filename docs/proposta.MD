@@ -6,20 +6,16 @@ A proposta deve apresentar uma ideia simples, clara e viável para ser desenvolv
 
 ## 1. Nome provisório do jogo
 
-Escreva aqui o nome provisório do jogo.
-
-Exemplo:
-
-> Corrida dos Obstáculos
+> Flapy
 
 ## 2. Integrantes do grupo
 
 Liste os integrantes do grupo.
 
-- Nome 1:
-- Nome 2:
-- Nome 3:
-- Nome 4:
+- Nome 1: Gustavo Albuquerque
+- Nome 2: Henrique de Freitas
+- Nome 3: Juan Pedro
+- Nome 4: Leonardo Gonzaga
 
 ## 3. Tipo de jogo
 
@@ -40,7 +36,7 @@ Exemplos:
 - jogo de clique rápido;
 - jogo de sobrevivência simples.
 
-Tipo escolhido pelo grupo:
+Tipo escolhido pelo grupo: jogo de desviar de obstáculos
 
 > Escreva aqui.
 
@@ -57,7 +53,9 @@ Procure responder:
 
 Descrição:
 
-> Escreva aqui.
+> O jogo é inspirado na mecânica de Flappy Bird. O jogador controla um personagem que deve atravessar obstáculos sem colidir com eles. A dificuldade aumenta gradualmente conforme a pontuação cresce, exigindo maior atenção e reflexos.
+
+O objetivo do projeto é desenvolver um jogo simples, divertido e organizado, aplicando os conceitos estudados na disciplina.
 
 ## 5. Objetivo do jogador
 
@@ -75,7 +73,7 @@ Exemplos:
 
 Objetivo:
 
-> Escreva aqui.
+> Controlar o personagem para atravessar o maior número possível de obstáculos, acumulando pontos e tentando superar o recorde armazenado pelo jogo.
 
 ## 6. Regras principais
 
@@ -91,11 +89,11 @@ Exemplo:
 
 Regras do grupo:
 
-- Regra 1:
-- Regra 2:
-- Regra 3:
-- Regra 4:
-- Regra 5:
+- Regra 1: O personagem se movimenta continuamente para frente.
+- Regra 2: O jogador pode realizar saltos para evitar obstáculos.
+- Regra 3: Cada obstáculo ultrapassado gera pontos.
+- Regra 4: A velocidade e a dificuldade podem aumentar ao longo da partida.
+- Regra 5: O jogo termina quando ocorre colisão com um obstáculo ou com os limites do cenário.
 
 ## 7. Condição de vitória
 
@@ -111,7 +109,7 @@ Exemplos:
 
 Condição de vitória:
 
-> Escreva aqui.
+> O jogador vence ao atingir uma pontuação pré-definida (por exemplo, 50 pontos) ou ao completar o objetivo estabelecido para a partida.
 
 ## 8. Condição de derrota ou encerramento
 
@@ -127,51 +125,30 @@ Exemplos:
 
 Condição de derrota ou encerramento:
 
-> Escreva aqui.
+> - Colisão com obstáculos.
+- Colisão com o chão ou limite inferior da tela.
+- Fechamento manual da janela pelo usuário.
 
 ## 9. Elementos previstos no jogo
 
 Descreva os principais elementos que farão parte do jogo.
 
-## Jogador ou elemento principal
-
-Exemplo:
-
-> Um personagem controlado pelas setas do teclado.
-
-Descrição:
-
-> Escreva aqui.
-
-## Obstáculos, inimigos ou desafios
-
-Exemplo:
-
-> Obstáculos aparecem em posições aleatórias e devem ser evitados.
-
-Descrição:
-
-> Escreva aqui.
-
-## Itens, alvos ou objetos de interação
-
-Exemplo:
-
-> Moedas aparecem na tela e aumentam a pontuação quando coletadas.
-
-Descrição:
-
-> Escreva aqui.
-
-## Pontuação, vidas, tempo ou progresso
-
-Exemplo:
-
-> O jogador começa com 3 vidas e ganha 10 pontos por item coletado.
-
-Descrição:
-
-> Escreva aqui.
+Pássaro (jogador)
+descrição: personagem controlado pelo jogador, responsável por atravessar os obstáculos e acumular pontos.
+Canos (obstáculos): 
+descrição: barreiras distribuídas pelo cenário que o jogador deve evitar para continuar na partida.
+Sistema de pontuação: 
+descrição: contabiliza a quantidade de obstáculos ultrapassados durante a partida.
+Recorde: 
+descrição: armazena a maior pontuação obtida pelo jogador, permitindo comparação entre partidas.
+Tela inicial: 
+descrição: menu principal que permite iniciar o jogo e visualizar informações básicas.
+Tela de Game Over: 
+descrição: exibida ao final da partida, mostrando a pontuação obtida e opções para reiniciar ou sair.
+Cenário de fundo: 
+descrição: elemento visual utilizado para representar o ambiente do jogo e melhorar a experiência do usuário.
+Efeitos sonoros: 
+descrição: sons reproduzidos durante ações importantes, como saltos, pontuação e colisões.
 
 ## 10. Controles previstos
 
@@ -188,9 +165,9 @@ Exemplo:
 
 Controles do grupo:
 
-- Tecla/comando:
-- Tecla/comando:
-- Tecla/comando:
+- Tecla/comando: Espaço: realizar salto
+- Tecla/comando: ESC: retornar ao menu ou encerrar o jogo.
+- Tecla/comando: Mouse: interação com botões do menu
 
 ## 11. Organização inicial do código
 
@@ -206,7 +183,15 @@ Exemplo:
 
 Organização planejada:
 
-> Escreva aqui.
+> - main.py: responsável por iniciar a aplicação.
+- src/game.py: contém o loop principal do jogo e o controle dos estados da partida.
+- src/player.py: responsável pela movimentação e comportamento do pássaro.
+- src/pipes.py: responsável pela geração e movimentação dos obstáculos.
+- src/score.py: controla a pontuação e o sistema de recordes.
+- src/menu.py: contém as telas de menu inicial e fim de jogo.
+- data/highscore.txt: armazena o recorde do jogador.
+- assets/: contém imagens, sons e outros recursos utilizados pelo jogo.
+- tests/: contém os testes das principais funções do projeto.
 
 
 ## 12. Recursos externos previstos
@@ -222,11 +207,12 @@ Exemplo:
 
 Recursos previstos:
 
-> Escreva aqui.
+> Imagens gratuitas para representar o pássaro, obstáculos e cenário.
+Efeitos sonoros gratuitos para ações como salto, pontuação e colisão.
+Fontes gratuitas para exibição de textos e pontuação.
+Tutoriais e documentações sobre Python e Pygame utilizados apenas como referência de estudo.
+Ícones e elementos gráficos livres de uso, caso necessário.
 
-Caso não pretenda utilizar recursos externos, escreva:
-
-> Não pretendemos utilizar recursos externos.
 
 ## 13. Principais dificuldades esperadas
 
@@ -245,9 +231,9 @@ Exemplos:
 
 Dificuldades previstas:
 
-- Dificuldade 1:
-- Dificuldade 2:
-- Dificuldade 3:
+- Dificuldade 1: implementar a movimentação do pássaro utilizando gravidade e saltos de forma adequada.
+- Dificuldade 2: criar um sistema eficiente de colisão entre o jogador e os obstáculos.
+- Dificuldade 3: organizar o código em módulos e funções, mantendo boa estrutura e legibilidade.
 
 ## 14. Escopo mínimo para a entrega final
 
@@ -261,7 +247,7 @@ Exemplo:
 
 Escopo mínimo:
 
-> Escreva aqui.
+> A versão mínima do jogo terá um pássaro controlado pelo jogador, obstáculos aparecendo continuamente na tela, sistema de pontuação, detecção de colisões, tela de fim de jogo, armazenamento do recorde em arquivo e código organizado em módulos e funções, permitindo a execução completa da partida sem erros
 
 ## 15. Possíveis melhorias, caso haja tempo
 
@@ -281,6 +267,8 @@ Exemplos:
 
 Melhorias possíveis:
 
-- Melhoria 1:
-- Melhoria 2:
-- Melhoria 3:
+- Melhoria 1: adicionar efeitos sonoros e música de fundo.
+- Melhoria 2: implementar aumento gradual da dificuldade conforme a pontuação.
+- Melhoria 3: adicionar animações e melhorias visuais ao personagem e aos obstáculos.
+- Melhoria 4: criar um menu inicial mais elaborado.
+- Melhoria 5: implementar um sistema de ranking com múltiplas pontuações.
